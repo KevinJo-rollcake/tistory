@@ -2,7 +2,7 @@ import pandas as pd
 from selenium import webdriver
 import time
 
-chrome_driver_path = 'E:\crawling\chromedriver.exe'
+chrome_driver_path = 'D:\workspace\kbo\chromedriver.exe'
 url = 'https://www.koreabaseball.com/Record/Player/HitterBasic/Basic1.aspx'
 
 driver = webdriver.Chrome(chrome_driver_path)
@@ -15,7 +15,6 @@ print(col_list)
 
 id_list = []
 row_list = []
-
 
 def getData():
     # playerID 추출
@@ -32,7 +31,7 @@ def getData():
     print(row_list)
 
 
-for i in range(1, 4):
+for i in range(1, 2):
     driver.find_element_by_xpath('//*[@id="cphContents_cphContents_cphContents_ucPager_btnNo' + str(i) + '"]').click()
     time.sleep(2)
     getData()
