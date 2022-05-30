@@ -2,7 +2,7 @@ import pandas as pd
 from selenium import webdriver
 import time
 
-chrome_driver_path = 'E:\crawling\chromedriver.exe'
+chrome_driver_path = 'D:\workspace\kbo\chromedriver.exe'
 url = 'https://www.koreabaseball.com/Record/Player/HitterBasic/Basic1.aspx'
 
 driver = webdriver.Chrome(chrome_driver_path)
